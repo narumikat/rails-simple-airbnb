@@ -1,0 +1,67 @@
+.container-flats {
+  margin: 3rem 80px;
+}
+
+.flat-card {
+  border-radius: 4px;
+  background: #eff1f4;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.flat-card:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.flat-card-body {
+  padding: 1.5rem
+}
+
+.title-flat {
+  height: 4rem;
+}
+
+.guests h4 {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.guests i {
+  color: #6f42c1;
+  font-size: 1.2rem;
+}
+
+.price i {
+  font-size: 1.2rem;
+  color: #198754;
+}
+
+.price_value {
+  color: #146c43;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.flat-card-body h4 {
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.guests_number {
+  color: #59359a;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.details-flat {
+  background: #fff;
+  padding: 1rem;
+}
+
+.details-flat a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}

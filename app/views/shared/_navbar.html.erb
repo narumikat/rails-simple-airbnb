@@ -1,0 +1,18 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <%= link_to root_path do %>
+      <i class="fa-brands fa-airbnb"></i>
+    <% end %>
+    <%= link_to 'Add Flat', new_flat_path, class: "btn btn-info"%>
+  </div>
+</nav>
+<style>
+  nav {
+    padding: 50px;
+    background: #e9ecef;
+  }
+
+  nav i {
+    font-size: 3rem;
+  }
+</style>

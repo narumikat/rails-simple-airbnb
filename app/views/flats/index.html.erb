@@ -1,0 +1,33 @@
+<div class="container-flats">
+  <h1 class="mb-4">All our flats (<%= @flats.length%>)</h1>
+  <div class="d-flex justify-content-center">
+    <div class="row justify-content-center">
+      <% @flats.each do |flat|%>
+        <div class="col-3">
+          <div class="flat-card border m-2">
+            <div class="flat-card-body">
+              <div class="title-flat">
+                <h3><%= flat.name %></h3>
+              </div>
+              <h4>Local: <%= flat.address %></h4>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center guests">
+                  <i class="fa-solid fa-user-group"></i>
+                  <div class="guests_number"><%= flat.number_of_guests %></div>
+                </div>
+                <div class="d-flex align-items-center price">
+                  <i class="fa-solid fa-yen-sign"></i>
+                  <div class="price_value"><%= flat.price_per_night %></div>
+                </div>
+              </div>
+            </div>
+            <div class="details-flat">
+              <%= link_to 'See Details', flat_path(flat)%>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<style></style>

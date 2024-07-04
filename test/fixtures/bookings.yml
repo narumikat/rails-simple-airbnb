@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flat: one
+  booked_from: 2024-07-04
+  booked_until: 2024-07-04
+
+two:
+  flat: two
+  booked_from: 2024-07-04
+  booked_until: 2024-07-04
