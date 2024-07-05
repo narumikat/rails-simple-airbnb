@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="mt-4">
-    <%= simple_form_for(@flat) do |f|%>
+  <div>
+    <%= simple_form_for @flat do |f| %>
       <%= f.input :name, class: "form-control" %>
       <%= f.input :address, class: "form-control" %>
       <%= f.input :description, class: "form-control" %>
@@ -8,7 +8,7 @@
       <%= f.input :number_of_guests, class: "form-control" %>
       <div class="d-flex justify-content-between">
         <%= f.submit class: "btn btn-primary" %>
-        <%= link_to 'Back to all Flats', flats_path, class: "btn btn-secondary" %>
+        <%= link_to 'Back', flat_path(@flat), class: "btn btn-secondary"%>
       </div>
     <% end %>
   </div>

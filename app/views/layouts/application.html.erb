@@ -13,5 +13,8 @@
   <body>
     <%= render "shared/navbar" %>
     <%= yield %>
+    <% flash.each do |key, value| %>
+      <div class="flash <%= key %>"><%= value %></div>
+    <% end %>
   </body>
 </html>

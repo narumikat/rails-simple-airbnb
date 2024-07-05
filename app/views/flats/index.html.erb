@@ -5,6 +5,7 @@
       <% @flats.each do |flat|%>
         <div class="col-3">
           <div class="flat-card border m-2">
+            <img src="<%= flat.picture_url %>" class="card-img-top" alt="<%= flat.name %>">
             <div class="flat-card-body">
               <div class="title-flat">
                 <h3><%= flat.name %></h3>
@@ -21,8 +22,16 @@
                 </div>
               </div>
             </div>
-            <div class="details-flat">
+            <div class="details-flat d-flex justify-content-between">
               <%= link_to 'See Details', flat_path(flat)%>
+              <div class="d-flex edit-btn">
+                <%= button_to flat_path(flat), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-flats" do %>
+                  <i class="fa-solid fa-trash-can" style="color: #dc3545;"></i>
+                <% end %>
+                <%= link_to edit_flat_path(flat) do %>
+                  <i class="fa-regular fa-pen-to-square" style="color: #0aa2c0;"></i>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
